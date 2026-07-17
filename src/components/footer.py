@@ -14,3 +14,18 @@ def footer_home():
 """,
         unsafe_allow_html=True,
     )
+
+
+def footer_dashboard():
+
+    st.markdown(
+        """
+        <div style="margin-top:2rem; display:flex; gap:6px; justify-content:center; items-align:center">
+        <p style="font-weight:bold; color:black;">Created by <b style="color:purple;">Aadrika</b></p>
+
+        </div>
+        
+
+""",
+        unsafe_allow_html=True,
+    )
