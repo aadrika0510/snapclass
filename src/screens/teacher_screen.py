@@ -268,19 +268,19 @@ def teacher_tab_manage_subjects():
                 ("⏰", "Classes", sub["total_classes"]),
             ]
 
-        subject_card(
-            name=sub["name"],
-            code=sub["subject_code"],
-            section=sub["section"],
-            stats=stats,
-        )
+            subject_card(
+                name=sub["name"],
+                code=sub["subject_code"],
+                section=sub["section"],
+                stats=stats,
+            )
 
-        if st.button(
-            f"Share Code: {sub['name']}",
-            key=f"share_{sub['subject_code']}",
-            icon=":material/share:",
-        ):
-            share_subject_dialog(sub["name"], sub["subject_code"])
+            if st.button(
+                f"Share Code: {sub['name']}",
+                key=f"share_{sub['subject_code']}",
+                icon=":material/share:",
+            ):
+                share_subject_dialog(sub["name"], sub["subject_code"])
 
 
 def teacher_tab_attendance_records():
